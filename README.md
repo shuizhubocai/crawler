@@ -1,7 +1,9 @@
-# 爬虫使用requests+lxml
-
+# 使用requests+lxml爬取网站
   ![crawler](https://raw.githubusercontent.com/shuizhubocai/crawler/master/assets/screen.png)
-  
+
+# 爬取的网站
+- 爬取的是董伟明博客
+
 # 爬虫包含5个模块
 - url管理器
 - download下载器
