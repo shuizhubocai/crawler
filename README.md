@@ -1,6 +1,7 @@
 # 爬虫使用requests+lxml
-    ![crawler](https://raw.githubusercontent.com/shuizhubocai/crawler/master/assets/screen.png "GitHub,Social Coding")
-    <img src="https://raw.githubusercontent.com/shuizhubocai/crawler/master/assets/screen.png" width="200px" />
+
+  ![crawler](https://raw.githubusercontent.com/shuizhubocai/crawler/master/assets/screen.png)
+  
 # 爬虫包含5个模块
 - url管理器
 - download下载器
