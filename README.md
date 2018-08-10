@@ -2,14 +2,15 @@
   ![crawler](https://raw.githubusercontent.com/shuizhubocai/crawler/master/assets/screen.png)
 
 # 爬取的网站
-- 爬取的是董伟明博客
+- 爬取的是董伟明博客标题
 
-# 爬虫包含5个模块
+# 爬虫包含6个模块
 - url管理器
 - download下载器
 - parser解析器
-- outpu导出数据
+- output导出数据
 - crawler爬虫调度器
+- useragent代理池
 
 # 使用项目
 - 建议使用virtualenv在独立的环境中运行项目

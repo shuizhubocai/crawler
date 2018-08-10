@@ -2,6 +2,7 @@ import requests
 import codecs
 from urllib.parse import urljoin
 from lxml import etree
+from modules import useragent
 
 # 地址管理器
 class Urls(object):
@@ -61,12 +62,13 @@ class Download(object):
         :return:
         '''
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+            'User-Agent': useragent.getUserAgent()
         }
         s = requests.session()
         r = s.request(method='get', url=url, headers=headers)
         if r.status_code == 200:
             print('正在抓取地址:%s' % url)
+            print('User-Agent:', r.request.headers.get('user-agent'))
             return r.content
         return None
 
@@ -137,7 +139,7 @@ class Output(object):
         将爬取的数据导出到html
         :return:
         '''
-        with codecs.open('data.html', 'w') as file:
+        with codecs.open('data.html', 'w', 'utf-8') as file:
             file.write('<meta charset="utf-8"/>')
             for key in self.datas:
                 file.write('<p><a target="_blank" href="%s">%s</a>,%s</p>\n' % (key['url'], key['title'], key['url']))
