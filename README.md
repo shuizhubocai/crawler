@@ -1,5 +1,5 @@
 # 使用requests+lxml爬取网站
-  ![crawler](https://raw.githubusercontent.com/shuizhubocai/crawler/master/assets/screen.png)
+  ![crawler](https://raw.githubusercontent.com/shuizhubocai/crawler/v1.0/assets/screen.png)
 
 # 爬取的网站
 - 爬取的是董伟明博客标题
